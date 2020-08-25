@@ -1,0 +1,113 @@
+.form-container {
+  width: 600px;
+  padding: 2.5rem;
+}
+
+.form {
+  &__title {
+    font-size: 3.5rem;
+  }
+
+  &__info {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+}
+
+.form__input {
+  margin-top: 0.8em;
+
+  label,
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 0.9em;
+  }
+
+  input {
+    line-height: 35px;
+
+    &:focus {
+      border: 2px solid #007c89;
+    }
+  }
+}
+
+.requirement-list {
+  margin-top: 0.5rem;
+
+  & li {
+    display: flex;
+    align-items: center;
+  }
+
+  & > li::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 10px;
+    color: cadetblue;
+    font-size: 2em;
+  }
+}
+
+.form-btn {
+  margin-top: 1.2rem;
+
+  & .signup-btn {
+    padding: 0 1.5rem;
+    line-height: 45px;
+    font-size: 1.2rem;
+    border: 1px solid #dedddc;
+    color: #bdbbb9;
+    background-color: transparent;
+  }
+}
+
+.recieve-ads {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+.recieve-ads input[type='checkbox'] {
+  margin-right: 15px;
+  transform: scale(1.5);
+}
+
+.footer-form {
+  line-height: 20px;
+  margin-top: 2rem;
+
+  & p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}
+
+.footer {
+  padding: 1rem;
+  line-height: 1.5;
+
+  & p,
+  & a {
+    color: rgba(36, 28, 21, 0.65);
+    font-size: 0.7rem;
+  }
+}
+
+.main-container__right-bg {
+  margin-left: -54px;
+  background-image: linear-gradient(to left, #ffe01b 85%, transparent 85%);
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: url('/assets/img/art-hero-flowers.png');
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 7%;
+  }
+}

@@ -1,0 +1,40 @@
+.main-container {
+  display: grid;
+  grid-template-columns: auto 513px;
+
+  &__left {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    grid-template-rows: 38px 1fr 48px;
+    margin: 1.2rem;
+  }
+}
+
+.form-container {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 48px auto;
+  padding: 36px;
+}
+
+.requirement-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-btn {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+}
+
+.footer {
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.main-container__right-bg {
+  grid-column: 2;
+  grid-row: 1 / -1;
+}

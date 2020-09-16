@@ -1,154 +1,124 @@
 @charset "UTF-8";
 a {
-  color: #007c89;
-}
-a:hover {
-  color: #004e56;
-}
+  color: #007c89; }
+  a:hover {
+    color: #004e56; }
 
 .main-container {
   display: grid;
-  grid-template-columns: auto 513px;
-}
-.main-container__left {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 38px 1fr;
-  grid-template-rows: 38px 1fr 48px;
-  margin: 1.2rem;
-}
+  grid-template-columns: auto 513px; }
+  .main-container__left {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    grid-template-rows: 38px 1fr 48px;
+    margin: 1.2rem; }
 
 .form-container {
   grid-column: 2;
   grid-row: 2;
   margin: 48px auto;
-  padding: 36px;
-}
+  padding: 36px; }
 
 .requirement-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.form-btn {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 20px;
-}
+  grid-template-columns: 1fr 1fr; }
 
 .footer {
   grid-row: 3;
-  grid-column: 1/-1;
-}
+  grid-column: 1 / -1; }
 
 .main-container__right-bg {
   grid-column: 2;
-  grid-row: 1/-1;
-}
+  grid-row: 1 / -1; }
 
 .main-container__left img {
-  width: 38px;
-}
+  width: 38px; }
 
 .form-container {
   width: 600px;
-  padding: 2.5rem;
-}
+  padding: 2.5rem; }
 
 .form__title {
-  font-size: 3.5rem;
-}
+  font-size: 3.5rem; }
+
 .form__info {
   margin-top: 15px;
   font-size: 1.1rem;
-  line-height: 25px;
-}
+  line-height: 25px; }
 
 .form__input {
-  margin-top: 0.8em;
-}
-.form__input label,
-.form__input input {
-  display: block;
-  width: 100%;
-  margin-top: 0.9em;
-}
-.form__input input {
-  line-height: 35px;
-}
-.form__input input:focus {
-  border: 2px solid #007c89;
-}
+  margin-top: 0.8em; }
+  .form__input label,
+  .form__input input {
+    display: block;
+    width: 100%;
+    margin-top: 0.9em; }
+  .form__input input {
+    line-height: 35px; }
+    .form__input input:focus {
+      border: 2px solid #007c89; }
 
 .requirement-list {
-  margin-top: 0.5rem;
-}
-.requirement-list li {
-  display: flex;
-  align-items: center;
-}
-.requirement-list > li::before {
-  content: "•";
-  display: inline-block;
-  margin-right: 10px;
-  color: cadetblue;
-  font-size: 2em;
-}
+  margin-top: 0.5rem; }
+  .requirement-list li {
+    display: flex;
+    align-items: center; }
+  .requirement-list > li::before {
+    content: "•";
+    display: inline-block;
+    margin-right: 10px;
+    color: cadetblue;
+    font-size: 2em; }
 
 .form-btn {
   margin-top: 1.2rem;
-}
-.form-btn .signup-btn {
-  padding: 0 1.5rem;
-  line-height: 45px;
-  font-size: 1.2rem;
-  border: 1px solid #dedddc;
-  color: #bdbbb9;
-  background-color: transparent;
-}
+  display: flex; }
 
 .recieve-ads {
   display: flex;
   align-items: flex-start;
   font-size: 1rem;
-  margin-left: 15px;
-}
+  margin-left: 15px; }
 
-.recieve-ads input[type=checkbox] {
+.recieve-ads input[type="checkbox"] {
   margin-right: 15px;
-  transform: scale(1.5);
-}
+  transform: scale(1.5); }
 
 .footer-form {
   line-height: 20px;
-  margin-top: 2rem;
-}
-.footer-form p {
-  font-size: 1rem;
-  font-weight: 200;
-}
+  margin-top: 2rem; }
+  .footer-form p {
+    font-size: 1rem;
+    font-weight: 200; }
+
+.form-btn__signup {
+  border: 1px solid #dedddc;
+  background-color: transparent;
+  color: #bdbbb9;
+  padding: 1rem 1.5rem;
+  min-width: 8rem;
+  font-weight: bold; }
+
+.form-btn__condition {
+  font-size: 0.9rem;
+  margin-left: 0.5rem; }
 
 .footer {
   padding: 1rem;
-  line-height: 1.5;
-}
-.footer p, .footer a {
-  color: rgba(36, 28, 21, 0.65);
-  font-size: 0.7rem;
-}
+  line-height: 1.5; }
+  .footer p,
+  .footer a {
+    color: rgba(36, 28, 21, 0.65);
+    font-size: 0.7rem; }
 
 .main-container__right-bg {
   margin-left: -54px;
   background-image: linear-gradient(to left, #ffe01b 85%, transparent 85%);
   overflow: hidden;
-  position: relative;
-}
-.main-container__right-bg::before {
-  content: url("/assets/img/art-hero-flowers.png");
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 7%;
-}
-
-/*# sourceMappingURL=styles.css.map */
+  position: relative; }
+  .main-container__right-bg::before {
+    content: url("/assets/img/art-hero-flowers.png");
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 7%; }

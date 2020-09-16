@@ -3,7 +3,6 @@
   grid-template-columns: auto 513px;
 
   &__left {
-    height: 100vh;
     display: grid;
     grid-template-columns: 38px 1fr;
     grid-template-rows: 38px 1fr 48px;
@@ -21,12 +20,6 @@
 .requirement-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.form-btn {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 20px;
 }
 
 .footer {

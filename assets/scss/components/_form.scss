@@ -43,7 +43,7 @@
   }
 
   & > li::before {
-    content: '•';
+    content: "•";
     display: inline-block;
     margin-right: 10px;
     color: cadetblue;
@@ -53,15 +53,7 @@
 
 .form-btn {
   margin-top: 1.2rem;
-
-  & .signup-btn {
-    padding: 0 1.5rem;
-    line-height: 45px;
-    font-size: 1.2rem;
-    border: 1px solid #dedddc;
-    color: #bdbbb9;
-    background-color: transparent;
-  }
+  display: flex;
 }
 
 .recieve-ads {
@@ -71,7 +63,7 @@
   margin-left: 15px;
 }
 
-.recieve-ads input[type='checkbox'] {
+.recieve-ads input[type="checkbox"] {
   margin-right: 15px;
   transform: scale(1.5);
 }
@@ -83,6 +75,22 @@
   & p {
     font-size: 1rem;
     font-weight: 200;
+  }
+}
+
+.form-btn {
+  &__signup {
+    border: 1px solid #dedddc;
+    background-color: transparent;
+    color: #bdbbb9;
+    padding: 1rem 1.5rem;
+    min-width: 8rem;
+    font-weight: bold;
+  }
+
+  &__condition {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -104,7 +112,7 @@
   position: relative;
 
   &::before {
-    content: url('/assets/img/art-hero-flowers.png');
+    content: url("/assets/img/art-hero-flowers.png");
     display: block;
     width: 100%;
     position: absolute;
